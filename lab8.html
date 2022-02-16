@@ -1,37 +1,60 @@
 <!doctype html>
 <html>
 <head>
-<title>Індивідуальне завдання до лабораторної роботи №8Мова HTML. Форми.</title>
-<h3>Індивідуальне завдання до лабораторної роботи №8.Мова HTML. Форми.</h3>
+<title>Лабораторна робота №8.</title>
+<h3>Лабораторна робота №8. Мова HTML. Форми.</h3>
 <meta charset="utf-8">
 </head>
  <body>
+<form method="get" (post) action="post" enctype="multipart/form-data"> 
+<div>
+ <textarea name="area1" cols="20" rows="5"></textarea> <br>
+</div>
+  
 <div>
   <select name="sl1">
-  <option value="v1" selected="selected">Україна</option>
-  <option value="v2">Франція</option>
-  <option value="v3">Австрія</option>
+  <option value="v1" selected="selected">значення 1 </option>
+  <option value="v2">значення 2 </option>
+  <option value="v3">значення 3 </option>
   <br>
   </select>
 </div>
-
-  <div>
-  <input type="text" name="tx1" value="Текстове поле" maxlength="6">  
+ 
+<div> 
+  <select name="sl2" size="3" multiple="multiple">
+  <option value="v1" selected="selected">значення 1 </option>
+  <option value="v2">значення 2 </option>
+  <option value="v3">значення 3 </option>
+  </select>
+</div>
+  <br> 
+<div>
+  <input type="text" name="tx1" value="Текстове поле">  
+</div>
+ <br>  
+<div>  
+   <input type="password" name="ps1" value="password1">
+</div>
+ <br>
+<div>
+  <input type="radio" name="rd1" value="значення1">Радіокнопка 1
+  <input type="radio" name="rd1" value="значення1">Радіокнопка 1
+  <input type="radio" name="rd1" value="значення2">Радіокнопка 2
+</div>
+ <br>
+<div>
+  <input type="checkbox" name="ch1" value="значення01">Чекбокс 1
+  <input type="checkbox" name="ch2" value="значення02">Чекбокс 2
 </div>
   <br>
-  
-  <div>
- <input type="radio" name="rd1" value="значення1">Радіокнопка 1
- <input type="radio" name="rd1" value="значення2">Радіокнопка 2
- <input type="radio" name="rd1" value="значення1">Радіокнопка 3
-  </div>
+<div>
+  <input type="file" name="fl1"> (method="post")
+</div>
   <br>
-  
-  <div>
-  <textarea name="area1" cols="20" rows="5"></textarea>
-  </div>
+<div>
+ <input type="hidden" name="hd1" value="приховане значення"> (method="post")
+</div>
   <br>
-  
 <div>
   <input type="button" name="bt1" value="кнопка">
 </div>
