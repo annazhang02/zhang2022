@@ -7,41 +7,39 @@
 </head>
  <body>
 <p><img src="zavd2.png" alt="Завдання2 "></p>
-<form method="get" (post) action="post" enctype="multipart/form-data">
 
-<p>Країна</p>
-<div>
-  <select name="sl1">
+<table border="1">
+<form method="get" (post) action="post" enctype="multipart/form-data">
+<tr>
+ <td>Країна</td>
+ <td><select name="sl1">
   <option value="v1" selected="selected">Україна</option>
   <option value="v2">Франція</option>
   <option value="v3">Німеччина</option>
   <option value="v3">Австрія</option>
   <option value="v3">Велика Британія </option>
-  </select>
-</div>
- <br>
-
-<div>
- <input type="text" name="tx1" maxlength = "6" value="Індекс">
-</div>
- <br>
+  </select></td>
+</tr>
  
- <p> Вид документу про освіту </p>
-<div>
-  <input type="radio" name="rd1" value="значення1">Атестат
+<tr>
+<td>Індекс</td>
+<td><input type="text" name="tx1" maxlength = "6" value="Індекс"></td>
+</tr>
+ 
+<tr>
+<td>Вид документа про освіту</td>
+<td><input type="radio" name="rd1" value="значення1">Атестат
   <input type="radio" name="rd2" value="значення2">Диплом
-  <input type="radio" name="rd3" value="значення3">Додаток до диплому
-</div>
- <br>
+  <input type="radio" name="rd3" value="значення3">Додаток до диплому</td>
+</tr>
  
- <div>
- <textarea name="area1" cols="20" rows="5"></textarea> <br>
-</div>
- 
-<div>
-  <input type="submit" name="sb1" value="Очистити форму">
-</div>
+<tr>
+<td>Автобіографія</td>
+<td><textarea name="area1" cols="20" rows="5"></textarea></td>
+</tr>
  
 </form>
+</table>  
+<input type="submit" name="sb1" value="Очистити форму">
 </body>
 </html>
